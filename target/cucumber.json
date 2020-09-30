@@ -1,0 +1,227 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-29T12:36:58.145Z",
+        "line": 4,
+        "name": "Verify Order Placing functionality.",
+        "description": "",
+        "id": "orderplacing-functionality;verify-order-placing-functionality.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10663000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to the website \"http://demowebshop.tricentis.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://demowebshop.tricentis.com/",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.OrderStepdefinition.userNavigatesToTheWebsite(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3586000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on \"Log in\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Log in\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.OrderStepdefinition.iClickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 985000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I log into user \"atest@gmail.com\" with password \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atest@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "123456",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinition.OrderStepdefinition.logIntoUserWithPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1524000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select \"Books\" from catagories",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinition.OrderStepdefinition.iSelectFromCatagories(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select a book and click on \"Add to cart\"",
+            "match": {
+              "location": "stepDefinition.OrderStepdefinition.iSelectABookByGivingFolloawingDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2836000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Click on “shopping cart”",
+            "match": {
+              "location": "stepDefinition.OrderStepdefinition.iClickOnShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1366000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Click on “Check-out”",
+            "match": {
+              "location": "stepDefinition.OrderStepdefinition.iClickOnCheckOut()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1610000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I fill the following details",
+            "match": {
+              "location": "stepDefinition.OrderStepdefinition.iFillTheFollowingDetails(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Billing address",
+                  "Billing"
+                ]
+              },
+              {
+                "cells": [
+                  "Shipping Address",
+                  "Shipping"
+                ]
+              },
+              {
+                "cells": [
+                  "Shipping method",
+                  "Next Day Air"
+                ]
+              },
+              {
+                "cells": [
+                  "Payment method",
+                  "Cash on delivery"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 383000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Validate the message “You will pay by COD”",
+            "match": {
+              "location": "stepDefinition.OrderStepdefinition.iValidateTheMessageYouWillPayByCOD()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 619000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on \"Confirm\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Confirm\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.OrderStepdefinition.iClickOnConfirmOrder(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3832000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Log out\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.OrderStepdefinition.iClickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "OrderPlacing Functionality",
+    "description": "",
+    "id": "orderplacing-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Order.feature",
+    "tags": []
+  }
+]
